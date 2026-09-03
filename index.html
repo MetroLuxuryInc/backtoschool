@@ -3,1388 +3,367 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Metro Luxury Back to School Promo</title>
-
 <style>
-
 :root{
-    --blue:#169fe3;
-    --blue-dark:#087cc1;
-    --navy:#062f54;
-    --navy-dark:#021b31;
-    --white:#ffffff;
-    --light:#f4faff;
-    --yellow:#ffd23f;
-    --border:#b8dff4;
+  --blue:#169fe3;
+  --blue-dark:#087cc1;
+  --navy:#062f54;
+  --navy-dark:#021b31;
+  --white:#ffffff;
+  --light:#f4faff;
+  --yellow:#ffd23f;
+  --border:#b8dff4;
 }
-
-*{
-    box-sizing:border-box;
-}
-
+*{box-sizing:border-box}
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#dcecf7;
-    color:var(--navy);
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#dcecf7;
+  color:var(--navy);
 }
-
-.page{
-    padding:25px;
-}
-
+.page{padding:24px}
 .flyer{
-    max-width:1000px;
-    margin:auto;
-    background:#fff;
-    overflow:hidden;
-    box-shadow:0 20px 55px rgba(0,0,0,.20);
+  max-width:1000px;
+  margin:auto;
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 20px 55px rgba(0,0,0,.20);
+  border-radius:22px;
 }
-
-
-/* ===========================
-   HERO
-=========================== */
-
 .hero{
-    position:relative;
-    min-height:600px;
-    overflow:hidden;
-
-    background:
-        linear-gradient(
-            105deg,
-            #ffffff 0%,
-            #ffffff 45%,
-            #edf8ff 70%,
-            #cbeafe 100%
-        );
-
-    padding:32px 40px;
+  position:relative;
+  min-height:560px;
+  overflow:hidden;
+  background:linear-gradient(105deg,#fff 0%,#fff 46%,#eef8ff 72%,#cdeaff 100%);
+  padding:30px 38px 40px;
 }
-
-
-/* METRO LOGO */
-
 .logo{
-    width:220px;
-    max-width:45vw;
-    height:auto;
-    display:block;
-    position:relative;
-    z-index:5;
+  width:210px;
+  max-width:45vw;
+  height:auto;
+  display:block;
+  position:relative;
+  z-index:5;
 }
-
-
-/* SCHOOL PROMO */
-
 .school-promo{
-    position:absolute;
-    top:35px;
-    right:35px;
-
-    width:260px;
-
-    padding:25px 18px;
-
-    background:var(--navy);
-
-    color:white;
-
-    text-align:center;
-
-    transform:rotate(-3deg);
-
-    box-shadow:0 12px 30px rgba(0,0,0,.20);
-
-    z-index:4;
+  position:absolute;
+  top:34px;
+  right:34px;
+  width:250px;
+  padding:24px 18px;
+  background:var(--navy);
+  color:#fff;
+  text-align:center;
+  transform:rotate(-3deg);
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
+  z-index:4;
 }
-
-.school-promo:before{
-    content:"";
-    position:absolute;
-    inset:-8px;
-    border:3px solid rgba(22,159,227,.35);
-    transform:rotate(2deg);
-}
-
-.school-small{
-    font-size:25px;
-    font-weight:900;
-}
-
-.school-main{
-    display:block;
-    color:var(--blue);
-    font-size:48px;
-    line-height:.95;
-    font-weight:900;
-}
-
-.school-bottom{
-    font-size:27px;
-    font-weight:900;
-}
-
-
-/* MAIN HEADLINE */
-
-.hero-copy{
-    position:relative;
-    z-index:3;
-    margin-top:65px;
-}
-
+.school-small{font-size:24px;font-weight:900}
+.school-main{display:block;color:var(--blue);font-size:47px;line-height:.95;font-weight:900}
+.school-bottom{font-size:27px;font-weight:900}
+.hero-copy{position:relative;z-index:3;margin-top:70px;max-width:650px}
 .hero h1{
-    margin:0;
-
-    font-size:92px;
-    line-height:.87;
-
-    letter-spacing:-4px;
-
-    font-weight:900;
-
-    color:var(--navy);
+  margin:0;
+  font-size:92px;
+  line-height:.87;
+  letter-spacing:-4px;
+  font-weight:900;
+  color:var(--navy);
 }
-
-.hero h1 span{
-    color:var(--blue);
-}
-
-.hero-text{
-    margin-top:22px;
-
-    max-width:510px;
-
-    font-size:23px;
-    line-height:1.4;
-
-    color:#243e55;
-}
-
-
-/* SKYLINE */
-
+.hero h1 span{color:var(--blue)}
+.hero-text{margin-top:22px;max-width:540px;font-size:22px;line-height:1.4;color:#243e55}
 .skyline{
-    position:absolute;
-    right:0;
-    bottom:0;
-
-    width:55%;
-    height:280px;
-
-    opacity:.18;
-
-    z-index:1;
-
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-end;
-    gap:7px;
-    padding-right:20px;
+  position:absolute;right:0;bottom:0;width:48%;height:250px;opacity:.14;z-index:1;
+  display:flex;align-items:flex-end;gap:7px;padding-right:20px
 }
-
-.building{
-    background:var(--navy);
-    width:42px;
-}
-
-.b1{height:110px;}
-.b2{height:160px;}
-.b3{height:135px;}
-.b4{height:210px;}
-.b5{height:170px;}
-.b6{height:240px;}
-.b7{height:145px;}
-.b8{height:195px;}
-.b9{height:125px;}
-
-
-/* VEHICLE */
-
-.vehicle{
-    position:absolute;
-
-    right:40px;
-    bottom:42px;
-
-    width:390px;
-    height:135px;
-
-    background:linear-gradient(
-        180deg,
-        #26323c,
-        #050b10
-    );
-
-    border-radius:110px 160px 35px 35px;
-
-    z-index:2;
-
-    box-shadow:0 18px 30px rgba(0,0,0,.25);
-}
-
-.vehicle:before{
-    content:"";
-
-    position:absolute;
-
-    width:205px;
-    height:92px;
-
-    left:95px;
-    top:-68px;
-
-    background:linear-gradient(
-        145deg,
-        #263b4b,
-        #07121b
-    );
-
-    border-radius:110px 100px 10px 10px;
-}
-
-.vehicle-window{
-    position:absolute;
-
-    left:115px;
-    top:-51px;
-
-    width:168px;
-    height:53px;
-
-    background:#86c8e9;
-
-    opacity:.75;
-
-    clip-path:polygon(
-        13% 100%,
-        30% 0,
-        73% 0,
-        100% 100%
-    );
-}
-
-.wheel{
-    position:absolute;
-
-    bottom:-30px;
-
-    width:72px;
-    height:72px;
-
-    border-radius:50%;
-
-    background:#05090d;
-
-    border:11px solid #34434f;
-}
-
-.w1{left:55px;}
-.w2{right:55px;}
-
-.car-logo{
-    position:absolute;
-
-    right:92px;
-    top:52px;
-
-    color:var(--blue);
-
-    font-size:20px;
-    font-weight:900;
-}
-
-
-/* ===========================
-   BASE FEE
-=========================== */
-
+.building{background:var(--navy);width:42px}
+.b1{height:110px} .b2{height:160px} .b3{height:135px} .b4{height:210px}
+.b5{height:170px} .b6{height:240px} .b7{height:145px} .b8{height:195px} .b9{height:125px}
 .base-section{
-    display:grid;
-
-    grid-template-columns:1.35fr .65fr;
-
-    color:white;
-
-    background:
-        linear-gradient(
-            105deg,
-            var(--blue-dark),
-            var(--blue)
-        );
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  color:#fff;
+  background:linear-gradient(105deg,var(--blue-dark),var(--blue));
 }
-
-.base-main{
-    padding:30px 40px;
-}
-
+.base-main{padding:30px 40px}
 .returning{
-    display:inline-block;
-
-    background:var(--navy);
-
-    padding:8px 16px;
-
-    font-size:22px;
-
-    font-weight:900;
-
-    text-transform:uppercase;
+  display:inline-block;background:var(--navy);padding:8px 16px;font-size:22px;font-weight:900;text-transform:uppercase
 }
-
-.base-big{
-    display:flex;
-    align-items:flex-end;
-
-    margin-top:10px;
-}
-
-.base-big .zero{
-    font-size:100px;
-    font-weight:900;
-    line-height:.8;
-}
-
-.base-big .text{
-    margin-left:18px;
-
-    font-size:55px;
-    line-height:.85;
-
-    font-weight:900;
-}
-
+.base-big{display:flex;align-items:flex-end;margin-top:10px}
+.base-big .zero{font-size:100px;font-weight:900;line-height:.8}
+.base-big .text{margin-left:18px;font-size:55px;line-height:.85;font-weight:900}
 .first-days{
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:8px 20px;
-
-    background:var(--navy);
-
-    font-size:23px;
-
-    font-weight:900;
+  display:inline-block;margin-top:20px;padding:8px 20px;background:var(--navy);font-size:23px;font-weight:900
 }
-
-.first-days strong{
-    color:var(--blue);
-}
-
-
-/* QUALIFY */
-
-.qualify{
-    display:flex;
-    align-items:center;
-
-    padding:28px;
-
-    background:rgba(4,39,70,.18);
-}
-
+.first-days strong{color:var(--blue)}
+.qualify{display:flex;align-items:center;padding:28px;background:rgba(4,39,70,.18)}
 .qualify-card{
-    background:white;
-
-    color:var(--navy);
-
-    padding:24px;
-
-    border-radius:18px;
-
-    text-align:center;
+  background:#fff;color:var(--navy);padding:24px;border-radius:18px;text-align:center
 }
-
 .qualify-icon{
-    width:65px;
-    height:65px;
-
-    margin:0 auto 12px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:var(--blue);
-
-    color:white;
-
-    font-size:30px;
+  width:65px;height:65px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:var(--blue);color:#fff;font-size:30px
 }
-
-.qualify-card h3{
-    margin:0;
-
-    color:var(--blue-dark);
-
-    font-size:22px;
-
-    text-transform:uppercase;
-}
-
-.qualify-card p{
-    margin:10px 0 0;
-
-    font-size:16px;
-    line-height:1.45;
-}
-
-
-/* ===========================
-   HIGHER PRICING
-=========================== */
-
+.qualify-card h3{margin:0;color:var(--blue-dark);font-size:22px;text-transform:uppercase}
+.qualify-card p{margin:10px 0 0;font-size:16px;line-height:1.45}
 .pricing{
-    margin:30px 35px 0;
-
-    padding:25px 30px;
-
-    display:flex;
-    align-items:center;
-
-    gap:22px;
-
-    border:3px solid var(--blue);
-
-    border-radius:18px;
-
-    background:
-        linear-gradient(
-            120deg,
-            #e6f6ff,
-            #ffffff
-        );
+  margin:30px 35px 0;padding:25px 30px;display:flex;align-items:center;gap:22px;
+  border:3px solid var(--blue);border-radius:18px;background:linear-gradient(120deg,#e6f6ff,#fff)
 }
-
 .price-icon{
-    width:78px;
-    height:78px;
-
-    flex-shrink:0;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:var(--blue);
-
-    color:white;
-
-    font-size:46px;
-    font-weight:900;
+  width:78px;height:78px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:var(--blue);color:#fff;font-size:46px;font-weight:900
 }
-
 .price-new{
-    display:inline-block;
-
-    padding:5px 13px;
-
-    background:var(--yellow);
-
-    border-radius:20px;
-
-    font-size:13px;
-    font-weight:900;
+  display:inline-block;padding:5px 13px;background:var(--yellow);border-radius:20px;font-size:13px;font-weight:900
 }
-
-.pricing h2{
-    margin:5px 0 3px;
-
-    font-size:30px;
-
-    color:var(--navy);
-
-    text-transform:uppercase;
-}
-
-.pricing p{
-    margin:0;
-
-    font-size:18px;
-    line-height:1.45;
-}
-
-.pricing strong{
-    color:var(--blue-dark);
-}
-
-
-/* ===========================
-   PAYMENT SECTION
-=========================== */
-
-.pay{
-    padding:38px 35px;
-}
-
-.pay h2{
-    margin:0 0 26px;
-
-    text-align:center;
-
-    font-size:38px;
-
-    color:var(--navy);
-
-    text-transform:uppercase;
-}
-
-.pay-grid{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:25px;
-}
-
-.pay-card{
-    position:relative;
-
-    overflow:hidden;
-
-    border:2px solid var(--blue);
-
-    border-radius:17px;
-
-    background:white;
-}
-
-.pay-head{
-    display:flex;
-    align-items:center;
-
-    gap:18px;
-
-    padding:22px;
-
-    background:#f6fbff;
-}
-
+.pricing h2{margin:5px 0 3px;font-size:30px;color:var(--navy);text-transform:uppercase}
+.pricing p{margin:0;font-size:18px;line-height:1.45}
+.pricing strong{color:var(--blue-dark)}
+.pay{padding:38px 35px}
+.pay h2{margin:0 0 26px;text-align:center;font-size:38px;color:var(--navy);text-transform:uppercase}
+.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.pay-card{overflow:hidden;border:2px solid var(--blue);border-radius:17px;background:#fff}
+.pay-head{display:flex;align-items:center;gap:18px;padding:22px;background:#f6fbff}
 .pay-icon{
-    width:82px;
-    height:82px;
-
-    flex-shrink:0;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:var(--blue);
-
-    color:white;
-
-    font-size:34px;
-    font-weight:900;
+  width:82px;height:82px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:var(--blue);color:#fff;font-size:34px;font-weight:900
 }
-
-.pay-head h3{
-    margin:0;
-
-    color:var(--blue-dark);
-
-    font-size:28px;
-
-    text-transform:uppercase;
-}
-
+.pay-head h3{margin:0;color:var(--blue-dark);font-size:28px;text-transform:uppercase}
 .trip-count{
-    display:inline-block;
-
-    margin-top:7px;
-
-    padding:7px 17px;
-
-    background:var(--navy);
-
-    color:white;
-
-    border-radius:7px;
-
-    font-size:25px;
-
-    font-weight:900;
+  display:inline-block;margin-top:7px;padding:7px 17px;background:var(--navy);color:#fff;
+  border-radius:7px;font-size:25px;font-weight:900
 }
-
-.pay-body{
-    padding:22px;
-
-    font-size:17px;
-
-    line-height:1.5;
-
-    text-align:center;
-}
-
+.pay-body{padding:22px;font-size:17px;line-height:1.5;text-align:center}
 .minimum{
-    margin-top:15px;
-
-    padding:14px;
-
-    border-radius:10px;
-
-    background:#e8f7ff;
-
-    color:var(--navy);
-
-    font-weight:900;
+  margin-top:15px;padding:14px;border-radius:10px;background:#e8f7ff;color:var(--navy);font-weight:900
 }
-
-.minimum strong{
-    color:var(--blue-dark);
-}
-
-
-/* ===========================
-   GPS
-=========================== */
-
+.minimum strong{color:var(--blue-dark)}
 .gps{
-    margin:0 35px 30px;
-
-    padding:26px;
-
-    background:
-        linear-gradient(
-            110deg,
-            var(--navy-dark),
-            var(--navy)
-        );
-
-    border-radius:18px;
-
-    color:white;
+  margin:0 35px 30px;padding:26px;background:linear-gradient(110deg,var(--navy-dark),var(--navy));
+  border-radius:18px;color:#fff
 }
-
-.gps-heading{
-    display:flex;
-
-    align-items:center;
-
-    gap:18px;
-}
-
+.gps-heading{display:flex;align-items:center;gap:18px}
 .gps-circle{
-    width:70px;
-    height:70px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    flex-shrink:0;
-
-    border-radius:50%;
-
-    background:var(--blue);
-
-    font-size:18px;
-    font-weight:900;
+  width:70px;height:70px;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  border-radius:50%;background:var(--blue);font-size:18px;font-weight:900
 }
-
-.gps h2{
-    margin:0;
-
-    font-size:30px;
-
-    text-transform:uppercase;
-}
-
-.gps h2 span{
-    color:var(--blue);
-}
-
-.gps-warning{
-    margin-top:15px;
-
-    font-size:19px;
-
-    font-weight:900;
-}
-
-.gps-warning strong{
-    color:var(--yellow);
-}
-
-.gps-events{
-    margin-top:20px;
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:12px;
-}
-
+.gps h2{margin:0;font-size:30px;text-transform:uppercase}
+.gps h2 span{color:var(--blue)}
+.gps-warning{margin-top:15px;font-size:19px;font-weight:900}
+.gps-warning strong{color:var(--yellow)}
+.gps-events{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .event{
-    padding:15px;
-
-    text-align:center;
-
-    border:1px solid rgba(255,255,255,.30);
-
-    border-radius:10px;
-
-    font-weight:900;
+  padding:15px;text-align:center;border:1px solid rgba(255,255,255,.30);
+  border-radius:10px;font-weight:900
 }
-
-
-/* ===========================
-   CONTACT
-=========================== */
-
 .contact{
-    padding:35px;
-
-    background:
-        linear-gradient(
-            100deg,
-            var(--blue-dark),
-            var(--blue)
-        );
-
-    color:white;
-
-    text-align:center;
+  padding:35px;background:linear-gradient(100deg,var(--blue-dark),var(--blue));color:#fff;text-align:center
 }
-
-.contact h2{
-    margin:0;
-
-    font-size:38px;
-
-    text-transform:uppercase;
-}
-
-.contact p{
-    margin:8px 0 18px;
-
-    font-size:18px;
-}
-
+.contact h2{margin:0;font-size:38px;text-transform:uppercase}
+.contact p{margin:8px 0 18px;font-size:18px}
 .no-call{
-    display:inline-block;
-
-    background:var(--navy);
-
-    padding:10px 25px;
-
-    border-radius:7px;
-
-    font-size:21px;
-
-    font-weight:900;
-
-    letter-spacing:1px;
+  display:inline-block;background:var(--navy);padding:10px 25px;border-radius:7px;
+  font-size:21px;font-weight:900;letter-spacing:1px
 }
-
 .contact-options{
-    margin:22px auto 0;
-
-    max-width:700px;
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:15px;
+  margin:22px auto 0;max-width:700px;display:grid;grid-template-columns:1fr 1fr;gap:15px
 }
-
 .contact-box{
-    padding:19px;
-
-    background:white;
-
-    color:var(--navy);
-
-    border-radius:12px;
-
-    text-decoration:none;
-
-    font-size:17px;
-
-    font-weight:900;
-
-    box-shadow:0 7px 18px rgba(0,0,0,.12);
+  padding:19px;background:#fff;color:var(--navy);border-radius:12px;text-decoration:none;
+  font-size:17px;font-weight:900;box-shadow:0 7px 18px rgba(0,0,0,.12)
 }
-
 .contact-box small{
-    display:block;
-
-    margin-bottom:4px;
-
-    color:#6e8497;
-
-    font-size:11px;
-
-    letter-spacing:1px;
+  display:block;margin-bottom:4px;color:#6e8497;font-size:11px;letter-spacing:1px
 }
-
-.email{
-    color:var(--blue-dark);
-}
-
-
-/* ===========================
-   BOTTOM
-=========================== */
-
+.email{color:var(--blue-dark)}
 .bottom{
-    padding:18px 25px;
-
-    background:var(--navy-dark);
-
-    color:#d1e3ef;
-
-    font-size:11px;
-
-    line-height:1.55;
-
-    text-align:center;
+  padding:18px 25px;background:var(--navy-dark);color:#d1e3ef;font-size:11px;line-height:1.55;text-align:center
 }
-
-
-/* ===========================
-   MOBILE
-=========================== */
-
 @media(max-width:750px){
-
-    .page{
-        padding:0;
-    }
-
-    .logo{
-        width:150px;
-    }
-
-    .hero{
-        min-height:auto;
-
-        padding:22px 20px 45px;
-    }
-
-    .school-promo{
-        position:relative;
-
-        top:auto;
-        right:auto;
-
-        width:180px;
-
-        margin:20px 0 35px auto;
-    }
-
-    .school-main{
-        font-size:34px;
-    }
-
-    .hero-copy{
-        margin-top:0;
-    }
-
-    .hero h1{
-        font-size:55px;
-    }
-
-    .hero-text{
-        font-size:18px;
-    }
-
-    .vehicle,
-    .skyline{
-        display:none;
-    }
-
-    .base-section{
-        grid-template-columns:1fr;
-    }
-
-    .base-main{
-        padding:28px 20px;
-    }
-
-    .base-big .zero{
-        font-size:72px;
-    }
-
-    .base-big .text{
-        font-size:39px;
-    }
-
-    .qualify{
-        padding:20px;
-    }
-
-    .pricing{
-        margin:25px 20px 0;
-
-        padding:20px;
-
-        align-items:flex-start;
-    }
-
-    .price-icon{
-        width:58px;
-        height:58px;
-
-        font-size:34px;
-    }
-
-    .pricing h2{
-        font-size:22px;
-    }
-
-    .pay{
-        padding:32px 20px;
-    }
-
-    .pay h2{
-        font-size:29px;
-    }
-
-    .pay-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gps{
-        margin:0 20px 28px;
-
-        padding:22px 19px;
-    }
-
-    .gps h2{
-        font-size:23px;
-    }
-
-    .gps-events{
-        grid-template-columns:1fr;
-    }
-
-    .contact{
-        padding:30px 20px;
-    }
-
-    .contact h2{
-        font-size:29px;
-    }
-
-    .contact-options{
-        grid-template-columns:1fr;
-    }
-
+  .page{padding:0}
+  .flyer{border-radius:0}
+  .logo{width:150px}
+  .hero{min-height:auto;padding:22px 20px 45px}
+  .school-promo{position:relative;top:auto;right:auto;width:180px;margin:20px 0 35px auto}
+  .school-main{font-size:34px}
+  .hero-copy{margin-top:0}
+  .hero h1{font-size:55px}
+  .hero-text{font-size:18px}
+  .skyline{display:none}
+  .base-section{grid-template-columns:1fr}
+  .base-main{padding:28px 20px}
+  .base-big .zero{font-size:72px}
+  .base-big .text{font-size:39px}
+  .qualify{padding:20px}
+  .pricing{margin:25px 20px 0;padding:20px;align-items:flex-start}
+  .price-icon{width:58px;height:58px;font-size:34px}
+  .pricing h2{font-size:22px}
+  .pay{padding:32px 20px}
+  .pay h2{font-size:29px}
+  .pay-grid{grid-template-columns:1fr}
+  .gps{margin:0 20px 28px;padding:22px 19px}
+  .gps h2{font-size:23px}
+  .gps-events{grid-template-columns:1fr}
+  .contact{padding:30px 20px}
+  .contact h2{font-size:29px}
+  .contact-options{grid-template-columns:1fr}
 }
-
 </style>
 </head>
-
-
 <body>
-
 <div class="page">
-
 <main class="flyer">
 
-
-<!-- HERO -->
-
 <section class="hero">
+  <img src="data:image/png;base64,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" alt="Metro Luxury" class="logo">
 
-<img
-    src="./Metro-logo-footer.png"
-    alt="Metro Luxury"
-    class="logo"
->
+  <div class="school-promo">
+    <div class="school-small">BACK TO</div>
+    <span class="school-main">SCHOOL</span>
+    <div class="school-bottom">PROMO</div>
+  </div>
 
-
-<div class="school-promo">
-
-    <div class="school-small">
-        BACK TO
-    </div>
-
-    <span class="school-main">
-        SCHOOL
-    </span>
-
-    <div class="school-bottom">
-        PROMO
-    </div>
-
-</div>
-
-
-<div class="hero-copy">
-
-    <h1>
-        COME BACK<br>
-        <span>&amp; DRIVE</span>
-    </h1>
-
+  <div class="hero-copy">
+    <h1>COME BACK<br><span>&amp; DRIVE</span></h1>
     <div class="hero-text">
-        Get back on the road with
-        <strong>Metro Luxury</strong>
-        and take advantage of our returning driver promotion.
+      Get back on the road with <strong>Metro Luxury</strong>
+      and take advantage of our returning driver promotion.
     </div>
+  </div>
 
-</div>
-
-
-<div class="skyline">
-
-    <div class="building b1"></div>
-    <div class="building b2"></div>
-    <div class="building b3"></div>
-    <div class="building b4"></div>
-    <div class="building b5"></div>
-    <div class="building b6"></div>
-    <div class="building b7"></div>
-    <div class="building b8"></div>
-    <div class="building b9"></div>
-
-</div>
-
-
-<div class="vehicle">
-
-    <div class="vehicle-window"></div>
-
-    <div class="wheel w1"></div>
-    <div class="wheel w2"></div>
-
-    <div class="car-logo">
-        METRO
-    </div>
-
-</div>
-
+  <div class="skyline">
+    <div class="building b1"></div><div class="building b2"></div><div class="building b3"></div>
+    <div class="building b4"></div><div class="building b5"></div><div class="building b6"></div>
+    <div class="building b7"></div><div class="building b8"></div><div class="building b9"></div>
+  </div>
 </section>
-
-
-
-<!-- BASE FEE -->
 
 <section class="base-section">
-
-
-<div class="base-main">
-
-    <div class="returning">
-        Returning Driver Special!
-    </div>
-
+  <div class="base-main">
+    <div class="returning">Returning Driver Special!</div>
     <div class="base-big">
-
-        <div class="zero">
-            $0
-        </div>
-
-        <div class="text">
-            BASE<br>FEE
-        </div>
-
+      <div class="zero">$0</div>
+      <div class="text">BASE<br>FEE</div>
     </div>
+    <div class="first-days">FOR YOUR FIRST <strong>30 DAYS</strong> BACK</div>
+  </div>
 
-    <div class="first-days">
-
-        FOR YOUR FIRST
-        <strong>30 DAYS</strong>
-        BACK
-
-    </div>
-
-</div>
-
-
-<div class="qualify">
-
+  <div class="qualify">
     <div class="qualify-card">
-
-        <div class="qualify-icon">
-            ★
-        </div>
-
-        <h3>
-            Minimum To Qualify
-            For No Base Fee
-        </h3>
-
-        <p>
-            You must complete the minimum
-            trip requirement shown below
-            to qualify for the $0 Base Fee.
-        </p>
-
+      <div class="qualify-icon">★</div>
+      <h3>Minimum To Qualify For No Base Fee</h3>
+      <p>
+        You must complete the minimum trip requirement shown below
+        to qualify for the $0 Base Fee.
+      </p>
     </div>
-
-</div>
-
+  </div>
 </section>
-
-
-
-<!-- HIGHER PRICING -->
 
 <section class="pricing">
-
-<div class="price-icon">
-    ↑
-</div>
-
-<div>
-
-    <div class="price-new">
-        NEW!
-    </div>
-
-    <h2>
-        Higher Trip Pricing
-    </h2>
-
+  <div class="price-icon">↑</div>
+  <div>
+    <div class="price-new">NEW!</div>
+    <h2>Higher Trip Pricing</h2>
     <p>
-        Rates have increased for eligible trips in
-        <strong>select areas throughout the 5 Boroughs.</strong>
+      Rates have increased for eligible trips in
+      <strong>select areas throughout the 5 Boroughs.</strong>
     </p>
-
-</div>
-
+  </div>
 </section>
-
-
-
-<!-- PAY -->
 
 <section class="pay">
+  <h2>Choose How You Get Paid</h2>
 
-<h2>
-    Choose How You Get Paid
-</h2>
-
-
-<div class="pay-grid">
-
-
-<!-- WEEKLY -->
-
-<div class="pay-card">
-
-    <div class="pay-head">
-
-        <div class="pay-icon">
-            25
-        </div>
-
+  <div class="pay-grid">
+    <div class="pay-card">
+      <div class="pay-head">
+        <div class="pay-icon">25</div>
         <div>
-
-            <h3>
-                Weekly Pay
-            </h3>
-
-            <div class="trip-count">
-                25 TRIPS
-            </div>
-
+          <h3>Weekly Pay</h3>
+          <div class="trip-count">25 TRIPS</div>
         </div>
-
-    </div>
-
-
-    <div class="pay-body">
-
-        Complete a minimum of
-        <strong>25 completed trips</strong>
+      </div>
+      <div class="pay-body">
+        Complete a minimum of <strong>25 completed trips</strong>
         to qualify for Weekly Pay.
-
         <div class="minimum">
-
-            ✓ A minimum of
-            <strong>25 completed trips</strong>
-            is also required to qualify for the
-            <strong>$0 Base Fee.</strong>
-
+          ✓ A minimum of <strong>25 completed trips</strong>
+          is also required to qualify for the <strong>$0 Base Fee.</strong>
         </div>
-
+      </div>
     </div>
 
-</div>
-
-
-
-<!-- NEXT DAY -->
-
-<div class="pay-card">
-
-    <div class="pay-head">
-
-        <div class="pay-icon">
-            5
-        </div>
-
+    <div class="pay-card">
+      <div class="pay-head">
+        <div class="pay-icon">5</div>
         <div>
-
-            <h3>
-                Next Day Pay
-            </h3>
-
-            <div class="trip-count">
-                5 TRIPS
-            </div>
-
+          <h3>Next Day Pay</h3>
+          <div class="trip-count">5 TRIPS</div>
         </div>
-
-    </div>
-
-
-    <div class="pay-body">
-
-        Complete a minimum of
-        <strong>5 completed trips</strong>
+      </div>
+      <div class="pay-body">
+        Complete a minimum of <strong>5 completed trips</strong>
         to qualify for Next Day Pay.
-
         <div class="minimum">
-
-            ✓ A minimum of
-            <strong>5 completed trips</strong>
-            is also required to qualify for the
-            <strong>$0 Base Fee.</strong>
-
+          ✓ A minimum of <strong>5 completed trips</strong>
+          is also required to qualify for the <strong>$0 Base Fee.</strong>
         </div>
-
+      </div>
     </div>
-
-</div>
-
-
-</div>
-
+  </div>
 </section>
-
-
-
-<!-- GPS -->
 
 <section class="gps">
+  <div class="gps-heading">
+    <div class="gps-circle">GPS</div>
+    <h2><span>GPS</span> Compliance Required</h2>
+  </div>
 
-<div class="gps-heading">
+  <div class="gps-warning">
+    ALL TRIPS MUST BE <strong>GPS COMPLIANT.</strong>
+  </div>
 
-    <div class="gps-circle">
-        GPS
-    </div>
-
-    <h2>
-        <span>GPS</span>
-        Compliance Required
-    </h2>
-
-</div>
-
-
-<div class="gps-warning">
-
-    ALL TRIPS MUST BE
-    <strong>GPS COMPLIANT.</strong>
-
-</div>
-
-
-<div class="gps-events">
-
-    <div class="event">
-        ON LOCATION
-    </div>
-
-    <div class="event">
-        PICKUP
-    </div>
-
-    <div class="event">
-        DROP OFF
-    </div>
-
-</div>
-
+  <div class="gps-events">
+    <div class="event">ON LOCATION</div>
+    <div class="event">PICKUP</div>
+    <div class="event">DROP OFF</div>
+  </div>
 </section>
-
-
-
-<!-- CONTACT -->
 
 <section class="contact">
+  <h2>Ready To Come Back?</h2>
+  <p>Get back on the road with Metro Luxury.</p>
 
-<h2>
-    Ready To Come Back?
-</h2>
+  <div class="no-call">DO NOT CALL</div>
 
-<p>
-    Get back on the road with Metro Luxury.
-</p>
-
-
-<div class="no-call">
-    DO NOT CALL
-</div>
-
-
-<div class="contact-options">
-
+  <div class="contact-options">
     <div class="contact-box">
-
-        <small>
-            OPTION 1
-        </small>
-
-        COME BY THE OFFICE
-
+      <small>OPTION 1</small>
+      COME BY THE OFFICE
     </div>
 
-
     <a
-        href="mailto:promos@metroluxurycorp.com?subject=Metro%20Luxury%20Back%20to%20School%20Promo"
-        class="contact-box email"
+      href="mailto:promos@metroluxurycorp.com?subject=Metro%20Luxury%20Back%20to%20School%20Promo"
+      class="contact-box email"
     >
-
-        <small>
-            OPTION 2 — SEND AN EMAIL
-        </small>
-
-        promos@metroluxurycorp.com
-
+      <small>OPTION 2 — SEND AN EMAIL</small>
+      promos@metroluxurycorp.com
     </a>
-
-</div>
-
+  </div>
 </section>
 
-
-
-<!-- TERMS -->
-
 <footer class="bottom">
-
-Limited-time promotion. Terms and conditions apply.
-Eligible completed trips must meet applicable GPS compliance requirements.
-Minimum completed-trip requirements must be met to qualify for the
-$0 Base Fee promotion.
-Higher pricing applies only to eligible trips in select areas.
-Metro Luxury Inc. reserves the right to modify or discontinue
-this promotion at any time.
-
+  Limited-time promotion. Terms and conditions apply.
+  Eligible completed trips must meet applicable GPS compliance requirements.
+  Minimum completed-trip requirements must be met to qualify for the $0 Base Fee promotion.
+  Higher pricing applies only to eligible trips in select areas.
+  Metro Luxury Inc. reserves the right to modify or discontinue this promotion at any time.
 </footer>
 
-
 </main>
-
 </div>
-
 </body>
 </html>
