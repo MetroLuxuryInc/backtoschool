@@ -1,1191 +1,1331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Metro Luxury - Back to School Promo</title>
+<title>Metro Luxury | Back to School Driver Promo</title>
 
-  <style>
-    :root {
-      --metro-blue: #159fe3;
-      --metro-blue-dark: #087bbd;
-      --metro-navy: #062d50;
-      --metro-navy-dark: #031d35;
-      --metro-light: #eaf6fd;
-      --white: #ffffff;
-      --yellow: #ffd338;
-      --text: #17344d;
-      --border: #d3e9f7;
-    }
+<style>
 
-    * {
-      box-sizing: border-box;
-    }
+:root {
+    --blue: #129FE3;
+    --blue-dark: #087BBE;
+    --navy: #062E51;
+    --navy-dark: #031D34;
+    --light-blue: #EAF7FE;
+    --lighter-blue: #F5FBFF;
+    --yellow: #FFD43B;
+    --white: #FFFFFF;
+    --text: #17364F;
+    --border: #CFE8F7;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #dcecf7;
-      color: var(--text);
-    }
+body {
+    margin: 0;
+    background: #DFEFF8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
 
-    .page {
-      width: 100%;
-      padding: 24px;
+.wrapper {
+    padding: 25px;
+}
+
+.flyer {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 18px 50px rgba(0,0,0,.18);
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+
+/* =========================================
+   TOP BRAND AREA
+========================================= */
+
+.top {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            125deg,
+            #ffffff 0%,
+            #f7fcff 52%,
+            #dff4ff 100%
+        );
+
+    padding: 30px 42px 45px;
+}
+
+.top::after {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    right: -100px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(18,159,227,.10);
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+
+    width: 195px;
+    max-width: 50%;
+    height: auto;
+}
+
+
+/* BACK TO SCHOOL */
+
+.school {
+    position: absolute;
+    right: 42px;
+    top: 32px;
+    z-index: 3;
+
+    background: var(--navy);
+    color: white;
+
+    padding: 15px 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.15);
+}
+
+.school small {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.school strong {
+    display: block;
+
+    color: var(--blue);
+
+    font-size: 29px;
+    line-height: 1;
+
+    margin: 3px 0;
+}
+
+.school span {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 55px;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    background: var(--blue);
+
+    color: white;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 13px;
+}
+
+.hero h1 {
+    margin: 0;
+
+    color: var(--navy);
+
+    font-size: 73px;
+
+    line-height: .88;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero p {
+    margin: 20px 0 0;
+
+    max-width: 600px;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+
+    color: #3D586E;
+}
+
+
+/* =========================================
+   PROMO STRIP
+========================================= */
+
+.promo-strip {
+    display: grid;
+
+    grid-template-columns:
+        1.25fr .75fr;
+
+    background:
+        linear-gradient(
+            100deg,
+            var(--blue-dark),
+            var(--blue)
+        );
+
+    color: white;
+}
+
+.promo-main {
+    padding: 30px 42px;
+}
+
+.promo-label {
+    font-size: 16px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.money {
+    display: flex;
+
+    align-items: flex-end;
+
+    margin-top: 6px;
+}
+
+.money .zero {
+    font-size: 83px;
+
+    font-weight: 900;
+
+    line-height: .85;
+}
+
+.money .words {
+    margin-left: 15px;
+
+    font-size: 42px;
+
+    line-height: .9;
+
+    font-weight: 900;
+}
+
+.thirty {
+    margin-top: 14px;
+
+    font-size: 21px;
+
+    font-weight: 900;
+}
+
+.thirty strong {
+    color: var(--yellow);
+}
+
+
+/* QUALIFICATION */
+
+.promo-rule {
+    display: flex;
+
+    align-items: center;
+
+    padding: 25px 30px;
+
+    background:
+        rgba(3,29,52,.25);
+
+    border-left:
+        1px solid rgba(255,255,255,.25);
+}
+
+.rule-box {
+    width: 100%;
+
+    background: white;
+
+    color: var(--navy);
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.rule-box strong {
+    display: block;
+
+    color: var(--blue-dark);
+
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.rule-box span {
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   PRICE INCREASE
+========================================= */
+
+.pricing {
+    margin: 30px 42px 0;
+
+    padding: 23px 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border:
+        3px solid var(--blue);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--light-blue),
+            white
+        );
+}
+
+.price-arrow {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: var(--blue);
+
+    color: white;
+
+    font-size: 42px;
+
+    font-weight: 900;
+}
+
+.price-copy {
+    flex: 1;
+}
+
+.new {
+    display: inline-block;
+
+    padding: 4px 10px;
+
+    margin-bottom: 4px;
+
+    border-radius: 15px;
+
+    background: var(--yellow);
+
+    color: var(--navy);
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+.pricing h2 {
+    margin: 0;
+
+    color: var(--navy);
+
+    font-size: 27px;
+
+    text-transform: uppercase;
+}
+
+.pricing p {
+    margin: 6px 0 0;
+
+    font-size: 16px;
+
+    line-height: 1.45;
+}
+
+.pricing p strong {
+    color: var(--blue-dark);
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment {
+    padding: 36px 42px;
+}
+
+.payment-title {
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+.payment-title h2 {
+    margin: 0;
+
+    color: var(--navy);
+
+    font-size: 32px;
+
+    text-transform: uppercase;
+}
+
+.payment-title p {
+    margin: 6px 0 0;
+
+    color: #60768A;
+
+    font-size: 15px;
+}
+
+
+/* PAY CARDS */
+
+.pay-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 22px;
+}
+
+.pay-card {
+    overflow: hidden;
+
+    border:
+        2px solid var(--border);
+
+    border-radius: 18px;
+
+    background: white;
+}
+
+.card-top {
+    padding: 18px;
+
+    background:
+        var(--navy);
+
+    color: white;
+
+    text-align: center;
+}
+
+.card-top .number {
+    font-size: 46px;
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+.card-top .trips {
+    margin-top: 3px;
+
+    color: var(--blue);
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.card-body {
+    padding: 22px;
+
+    text-align: center;
+}
+
+.card-body h3 {
+    margin: 0;
+
+    color: var(--blue-dark);
+
+    font-size: 27px;
+
+    text-transform: uppercase;
+}
+
+.card-body p {
+    margin: 10px 0;
+
+    font-size: 16px;
+
+    line-height: 1.45;
+}
+
+.base-qualifier {
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    background: var(--light-blue);
+
+    color: var(--navy);
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    font-weight: 900;
+}
+
+.check {
+    color: var(--blue-dark);
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   GPS
+========================================= */
+
+.gps {
+    margin: 0 42px 35px;
+
+    padding: 26px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--navy-dark),
+            var(--navy)
+        );
+
+    color: white;
+}
+
+.gps-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.gps-box {
+    width: 62px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--blue);
+
+    font-size: 17px;
+
+    font-weight: 900;
+}
+
+.gps h2 {
+    margin: 0;
+
+    font-size: 28px;
+
+    text-transform: uppercase;
+}
+
+.gps h2 span {
+    color: var(--blue);
+}
+
+.gps-warning {
+    margin-top: 17px;
+
+    font-size: 19px;
+
+    font-weight: 900;
+}
+
+.gps-warning strong {
+    color: var(--yellow);
+}
+
+.gps p {
+    margin: 7px 0 0;
+
+    color: #D9ECF8;
+
+    line-height: 1.45;
+}
+
+.gps-events {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.gps-event {
+    padding: 12px;
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================
+   CONTACT / CTA
+========================================= */
+
+.contact {
+    position: relative;
+
+    padding: 34px 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            100deg,
+            var(--blue-dark),
+            var(--blue)
+        );
+
+    color: white;
+}
+
+.contact h2 {
+    margin: 0;
+
+    font-size: 36px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.contact-sub {
+    margin-top: 7px;
+
+    font-size: 17px;
+}
+
+
+/* DO NOT CALL */
+
+.no-call {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 9px 22px;
+
+    background: var(--navy);
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 19px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* CONTACT CHOICES */
+
+.contact-options {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 14px;
+}
+
+.contact-option {
+    padding: 17px;
+
+    background: white;
+
+    color: var(--navy);
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 14px rgba(0,0,0,.12);
+}
+
+.contact-option small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #6C8193;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.contact-option.email {
+    color: var(--blue-dark);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    padding: 18px 25px;
+
+    background: var(--navy-dark);
+
+    color: #C7DAE8;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:700px) {
+
+    .wrapper {
+        padding: 0;
     }
 
     .flyer {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      overflow: hidden;
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
-      border-radius: 24px;
+        border-radius: 0;
     }
 
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-      position: relative;
-      min-height: 475px;
-      padding: 28px 42px 44px;
-      overflow: hidden;
-
-      background:
-        radial-gradient(
-          circle at 85% 15%,
-          rgba(21, 159, 227, 0.30),
-          transparent 35%
-        ),
-        linear-gradient(
-          135deg,
-          #ffffff 0%,
-          #f5fbff 50%,
-          #d9f1ff 100%
-        );
-    }
-
-    .logo-row {
-      display: flex;
-      align-items: center;
-      position: relative;
-      z-index: 2;
+    .top {
+        padding:
+            22px 20px 35px;
     }
 
     .logo {
-      width: 190px;
-      max-width: 46vw;
-      height: auto;
-      display: block;
+        width: 145px;
     }
 
-    .school-badge {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-      width: 205px;
+    .school {
+        position: relative;
 
-      background: var(--metro-navy);
-      color: white;
+        top: auto;
+        right: auto;
 
-      text-align: center;
-      padding: 17px 15px;
+        width: 165px;
 
-      border-radius: 20px;
-
-      transform: rotate(3deg);
-
-      box-shadow: 0 10px 22px rgba(0,0,0,.18);
-
-      z-index: 2;
+        margin:
+            12px 0 30px auto;
     }
 
-    .school-badge .small {
-      display: block;
-      font-size: 19px;
-      font-weight: 900;
-    }
-
-    .school-badge .school {
-      display: block;
-      color: var(--metro-blue);
-      font-size: 39px;
-      font-weight: 900;
-      line-height: 1;
-    }
-
-    .school-badge .promo {
-      display: block;
-      margin-top: 3px;
-      font-size: 20px;
-      font-weight: 900;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      margin-top: 48px;
-      max-width: 560px;
+    .hero {
+        margin-top: 0;
     }
 
     .hero h1 {
-      margin: 0;
-      font-size: 76px;
-      line-height: 0.88;
-      letter-spacing: -3px;
-      font-weight: 900;
-      color: var(--metro-navy);
-      text-transform: uppercase;
+        font-size: 51px;
     }
 
-    .hero h1 span {
-      color: var(--metro-blue);
+    .hero p {
+        font-size: 17px;
     }
 
-    .hero-subtitle {
-      margin-top: 20px;
-      max-width: 520px;
-      font-size: 21px;
-      line-height: 1.45;
-      color: #38536b;
+    .promo-strip {
+        grid-template-columns:
+            1fr;
     }
 
-    .hero-subtitle strong {
-      color: var(--metro-navy);
+    .promo-main {
+        padding:
+            27px 20px;
     }
 
-    /* Decorative road/car */
+    .promo-rule {
+        border-left: none;
 
-    .road {
-      position: absolute;
-      right: -30px;
-      bottom: -30px;
-      width: 490px;
-      height: 230px;
-      background:
-        linear-gradient(
-          160deg,
-          transparent 0%,
-          transparent 34%,
-          rgba(6,45,80,.06) 35%,
-          rgba(6,45,80,.06) 44%,
-          transparent 45%
-        );
-      z-index: 1;
+        border-top:
+            1px solid rgba(255,255,255,.25);
+
+        padding:
+            20px;
     }
 
-    .car {
-      position: absolute;
-      right: 65px;
-      bottom: 55px;
-      width: 285px;
-      height: 88px;
-      background: linear-gradient(180deg, #283846, #07111a);
-      border-radius: 75px 110px 28px 28px;
-      box-shadow: 0 12px 20px rgba(0,0,0,.22);
+    .money .zero {
+        font-size: 68px;
     }
 
-    .car::before {
-      content: "";
-      position: absolute;
-      left: 62px;
-      top: -46px;
-      width: 150px;
-      height: 62px;
-      background: linear-gradient(135deg, #274256, #09151f);
-      border-radius: 70px 85px 6px 6px;
+    .money .words {
+        font-size: 34px;
     }
 
-    .car::after {
-      content: "";
-      position: absolute;
-      left: 68px;
-      top: -34px;
-      width: 155px;
-      height: 39px;
-      background: rgba(126, 201, 239, 0.65);
-      clip-path: polygon(10% 100%, 28% 0, 75% 0, 100% 100%);
+    .pricing {
+        margin:
+            24px 20px 0;
+
+        padding:
+            20px;
+
+        align-items:
+            flex-start;
     }
 
-    .wheel {
-      position: absolute;
-      bottom: -22px;
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: #07111a;
-      border: 8px solid #2b3e4e;
+    .price-arrow {
+        width: 55px;
+        height: 55px;
+
+        font-size: 32px;
     }
 
-    .wheel.one {
-      left: 42px;
+    .pricing h2 {
+        font-size: 21px;
     }
 
-    .wheel.two {
-      right: 42px;
-    }
-
-    /* =========================
-       $0 BASE FEE
-    ========================= */
-
-    .base-fee {
-      padding: 30px 42px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 28px;
-
-      color: white;
-
-      background:
-        linear-gradient(
-          105deg,
-          var(--metro-blue-dark),
-          var(--metro-blue)
-        );
-    }
-
-    .base-left {
-      flex: 1;
-    }
-
-    .returning {
-      font-size: 17px;
-      font-weight: 900;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .zero-row {
-      display: flex;
-      align-items: flex-end;
-      margin-top: 5px;
-    }
-
-    .zero {
-      font-size: 82px;
-      font-weight: 900;
-      line-height: 0.85;
-    }
-
-    .base-word {
-      margin-left: 15px;
-      font-size: 44px;
-      font-weight: 900;
-      line-height: 0.9;
-    }
-
-    .days {
-      margin-top: 13px;
-      font-size: 22px;
-      font-weight: 900;
-    }
-
-    .days strong {
-      color: var(--yellow);
-    }
-
-    .qualify {
-      width: 315px;
-      background: white;
-      color: var(--metro-navy);
-      border-radius: 16px;
-      padding: 18px 20px;
-      text-align: center;
-      box-shadow: 0 8px 18px rgba(0,0,0,.12);
-    }
-
-    .qualify strong {
-      display: block;
-      color: var(--metro-blue-dark);
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    .qualify span {
-      display: block;
-      font-size: 14px;
-      line-height: 1.45;
-    }
-
-    /* =========================
-       HIGHER TRIP PRICING
-    ========================= */
-
-    .price-increase {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-
-      margin: 30px 42px 0;
-      padding: 24px 28px;
-
-      background: linear-gradient(135deg, #eaf8ff, #ffffff);
-
-      border: 3px solid var(--metro-blue);
-      border-radius: 20px;
-
-      box-shadow: 0 8px 20px rgba(21,159,227,.12);
-    }
-
-    .price-icon {
-      width: 80px;
-      height: 80px;
-      flex-shrink: 0;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-
-      background: linear-gradient(
-        135deg,
-        var(--metro-blue),
-        var(--metro-blue-dark)
-      );
-
-      color: white;
-      font-size: 48px;
-      font-weight: 900;
-    }
-
-    .price-content {
-      flex: 1;
-    }
-
-    .new-label {
-      display: inline-block;
-      margin-bottom: 5px;
-      padding: 5px 12px;
-
-      background: var(--yellow);
-      color: var(--metro-navy);
-
-      border-radius: 20px;
-
-      font-size: 13px;
-      font-weight: 900;
-    }
-
-    .price-content h2 {
-      margin: 0;
-      color: var(--metro-navy);
-      font-size: 30px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    .price-content p {
-      margin: 7px 0 10px;
-      font-size: 17px;
-      line-height: 1.45;
-    }
-
-    .price-content p strong {
-      color: var(--metro-blue-dark);
-    }
-
-    .earning-line {
-      color: var(--metro-blue-dark);
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: .4px;
-      text-transform: uppercase;
-    }
-
-    /* =========================
-       PAYMENT OPTIONS
-    ========================= */
-
-    .pay {
-      padding: 36px 42px 38px;
-      background: white;
-    }
-
-    .pay-title {
-      margin: 0 0 25px;
-      text-align: center;
-      color: var(--metro-navy);
-      font-size: 33px;
-      font-weight: 900;
-      text-transform: uppercase;
+    .payment {
+        padding:
+            30px 20px;
     }
 
     .pay-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+        grid-template-columns:
+            1fr;
     }
 
-    .pay-card {
-      position: relative;
-      padding: 27px 24px 28px;
-      text-align: center;
+    .gps {
+        margin:
+            0 20px 30px;
 
-      border: 2px solid var(--border);
-      border-radius: 20px;
-
-      background: linear-gradient(180deg, white, #f5fbff);
-
-      overflow: hidden;
+        padding:
+            22px 19px;
     }
 
-    .pay-card::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      height: 8px;
-      background: var(--metro-blue);
-    }
-
-    .trip-circle {
-      width: 85px;
-      height: 85px;
-      margin: 3px auto 15px;
-
-      border-radius: 50%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--metro-blue),
-          var(--metro-blue-dark)
-        );
-
-      color: white;
-
-      font-size: 32px;
-      font-weight: 900;
-
-      box-shadow: 0 7px 15px rgba(21,159,227,.25);
-    }
-
-    .pay-card h3 {
-      margin: 0;
-      color: var(--metro-blue-dark);
-      font-size: 29px;
-      text-transform: uppercase;
-    }
-
-    .trip-label {
-      display: inline-block;
-      margin: 13px 0;
-      padding: 9px 18px;
-
-      border-radius: 8px;
-
-      background: var(--metro-navy);
-      color: white;
-
-      font-size: 25px;
-      font-weight: 900;
-    }
-
-    .pay-card p {
-      margin: 3px auto;
-      max-width: 310px;
-      font-size: 17px;
-      line-height: 1.45;
-    }
-
-    .pay-card p strong {
-      color: var(--metro-navy);
-    }
-
-    .no-fee-rule {
-      margin-top: 16px;
-      padding: 13px 12px;
-
-      background: #e5f5ff;
-      border: 1px solid #c6eaff;
-      border-radius: 10px;
-
-      color: var(--metro-navy);
-
-      font-size: 15px;
-      font-weight: 900;
-      line-height: 1.4;
-    }
-
-    /* =========================
-       GPS
-    ========================= */
-
-    .gps-section {
-      margin: 0 42px 38px;
-      padding: 28px 30px;
-
-      background:
-        linear-gradient(
-          120deg,
-          var(--metro-navy-dark),
-          var(--metro-navy)
-        );
-
-      color: white;
-
-      border-radius: 20px;
-    }
-
-    .gps-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .gps-icon {
-      width: 62px;
-      height: 62px;
-      flex-shrink: 0;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-
-      background: var(--metro-blue);
-
-      font-size: 18px;
-      font-weight: 900;
-    }
-
-    .gps-section h2 {
-      margin: 0;
-      font-size: 29px;
-      text-transform: uppercase;
-    }
-
-    .gps-section h2 span {
-      color: var(--metro-blue);
-    }
-
-    .gps-main {
-      margin-top: 18px;
-      font-size: 20px;
-      font-weight: 900;
-    }
-
-    .gps-main strong {
-      color: var(--yellow);
-    }
-
-    .gps-section p {
-      margin: 8px 0 0;
-      line-height: 1.5;
-      color: #e8f4fc;
+    .gps h2 {
+        font-size: 22px;
     }
 
     .gps-events {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 20px;
+        grid-template-columns:
+            1fr;
     }
 
-    .gps-event {
-      padding: 13px 10px;
-
-      border: 1px solid rgba(255,255,255,.30);
-      border-radius: 10px;
-
-      background: rgba(255,255,255,.07);
-
-      text-align: center;
-      font-weight: 900;
+    .contact {
+        padding:
+            30px 20px;
     }
 
-    /* =========================
-       CTA
-    ========================= */
-
-    .cta {
-      padding: 34px 25px;
-      text-align: center;
-
-      background:
-        linear-gradient(
-          100deg,
-          var(--metro-blue-dark),
-          var(--metro-blue)
-        );
-
-      color: white;
+    .contact h2 {
+        font-size: 29px;
     }
 
-    .cta h2 {
-      margin: 0;
-      font-size: 39px;
-      font-weight: 900;
-      text-transform: uppercase;
+    .contact-options {
+        grid-template-columns:
+            1fr;
     }
 
-    .cta p {
-      margin: 8px 0 20px;
-      font-size: 18px;
-    }
+}
 
-    .cta-button {
-      display: inline-block;
-      padding: 16px 35px;
-
-      border-radius: 50px;
-
-      background: white;
-      color: var(--metro-navy);
-
-      text-decoration: none;
-
-      font-size: 19px;
-      font-weight: 900;
-
-      box-shadow: 0 7px 15px rgba(0,0,0,.15);
-    }
-
-    .cta-button:hover {
-      transform: translateY(-1px);
-    }
-
-    /* =========================
-       BENEFITS
-    ========================= */
-
-    .benefits {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
-      background: var(--metro-navy);
-      color: white;
-
-      text-align: center;
-    }
-
-    .benefit {
-      padding: 20px 10px;
-
-      font-size: 15px;
-      font-weight: 900;
-
-      border-right: 1px solid rgba(255,255,255,.15);
-    }
-
-    .benefit:last-child {
-      border-right: none;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer {
-      padding: 18px 25px;
-
-      background: var(--metro-navy-dark);
-      color: #c7d9e8;
-
-      text-align: center;
-
-      font-size: 11px;
-      line-height: 1.55;
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 700px) {
-
-      .page {
-        padding: 0;
-      }
-
-      .flyer {
-        border-radius: 0;
-      }
-
-      .hero {
-        min-height: auto;
-        padding: 22px 20px 38px;
-      }
-
-      .logo {
-        width: 150px;
-      }
-
-      .school-badge {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: 175px;
-        margin: 10px 0 28px auto;
-        transform: rotate(2deg);
-      }
-
-      .hero-content {
-        margin-top: 0;
-      }
-
-      .hero h1 {
-        font-size: 52px;
-      }
-
-      .hero-subtitle {
-        font-size: 18px;
-      }
-
-      .road {
-        display: none;
-      }
-
-      .base-fee {
-        padding: 28px 20px;
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .zero {
-        font-size: 68px;
-      }
-
-      .base-word {
-        font-size: 37px;
-      }
-
-      .qualify {
-        width: 100%;
-      }
-
-      .price-increase {
-        margin: 25px 20px 0;
-        padding: 21px;
-        align-items: flex-start;
-      }
-
-      .price-icon {
-        width: 58px;
-        height: 58px;
-        font-size: 34px;
-      }
-
-      .price-content h2 {
-        font-size: 23px;
-      }
-
-      .pay {
-        padding: 30px 20px;
-      }
-
-      .pay-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gps-section {
-        margin: 0 20px 30px;
-        padding: 24px 20px;
-      }
-
-      .gps-header {
-        align-items: flex-start;
-      }
-
-      .gps-section h2 {
-        font-size: 24px;
-      }
-
-      .gps-events {
-        grid-template-columns: 1fr;
-      }
-
-      .benefits {
-        grid-template-columns: 1fr;
-      }
-
-      .benefit {
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,.15);
-      }
-
-      .benefit:last-child {
-        border-bottom: none;
-      }
-    }
-
-    @media print {
-
-      body {
-        background: white;
-      }
-
-      .page {
-        padding: 0;
-      }
-
-      .flyer {
-        box-shadow: none;
-        border-radius: 0;
-      }
-    }
-
-  </style>
+</style>
 </head>
+
 
 <body>
 
-<div class="page">
+<div class="wrapper">
 
-  <main class="flyer">
+<div class="flyer">
 
-    <!-- =========================
-         HERO
-    ========================= -->
 
-    <section class="hero">
+<!-- =========================================
+     TOP
+========================================= -->
 
-      <div class="logo-row">
+<section class="top">
 
-        <img
-          src="Metro-logo-footer.png"
-          alt="Metro Luxury Inc."
-          class="logo"
-        >
+    <img
+        src="Metro-logo-footer.png"
+        alt="Metro Luxury Inc."
+        class="logo"
+    >
 
-      </div>
 
-      <div class="school-badge">
+    <div class="school">
 
-        <span class="small">
-          BACK TO
-        </span>
-
-        <span class="school">
-          SCHOOL
-        </span>
-
-        <span class="promo">
-          PROMO
-        </span>
-
-      </div>
-
-      <div class="hero-content">
-
-        <h1>
-          COME BACK<br>
-          <span>&amp; DRIVE</span>
-        </h1>
-
-        <div class="hero-subtitle">
-
-          Get back on the road with
-          <strong>Metro Luxury</strong>
-          and take advantage of our returning driver promotion.
-
-        </div>
-
-      </div>
-
-      <div class="road">
-
-        <div class="car">
-
-          <div class="wheel one"></div>
-          <div class="wheel two"></div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- =========================
-         BASE FEE
-    ========================= -->
-
-    <section class="base-fee">
-
-      <div class="base-left">
-
-        <div class="returning">
-          Returning Driver Special
-        </div>
-
-        <div class="zero-row">
-
-          <div class="zero">
-            $0
-          </div>
-
-          <div class="base-word">
-            BASE<br>FEE
-          </div>
-
-        </div>
-
-        <div class="days">
-
-          FOR YOUR FIRST
-          <strong>30 DAYS</strong>
-          BACK
-
-        </div>
-
-      </div>
-
-      <div class="qualify">
+        <small>
+            BACK TO
+        </small>
 
         <strong>
-          MINIMUM TRIPS REQUIRED
+            SCHOOL
         </strong>
 
         <span>
-          You must meet the minimum completed-trip requirement
-          for your selected payment option to qualify for the
-          $0 base fee promotion.
+            DRIVER PROMO
         </span>
 
-      </div>
+    </div>
 
-    </section>
 
-    <!-- =========================
-         HIGHER PRICING
-    ========================= -->
+    <div class="hero">
 
-    <section class="price-increase">
+        <div class="eyebrow">
+            RETURNING DRIVERS
+        </div>
 
-      <div class="price-icon">
+        <h1>
+            COME BACK<br>
+            <span>&amp; DRIVE</span>
+        </h1>
+
+        <p>
+            Come back to
+            <strong>Metro Luxury</strong>
+            and take advantage of new earning
+            opportunities and our returning driver promotion.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     $0 BASE FEE
+========================================= -->
+
+<section class="promo-strip">
+
+    <div class="promo-main">
+
+        <div class="promo-label">
+            Returning Driver Special
+        </div>
+
+        <div class="money">
+
+            <div class="zero">
+                $0
+            </div>
+
+            <div class="words">
+                BASE<br>FEE
+            </div>
+
+        </div>
+
+        <div class="thirty">
+            FOR YOUR FIRST
+            <strong>30 DAYS</strong>
+            BACK
+        </div>
+
+    </div>
+
+
+    <div class="promo-rule">
+
+        <div class="rule-box">
+
+            <strong>
+                MINIMUM TRIPS REQUIRED
+            </strong>
+
+            <span>
+                Minimum completed-trip requirements
+                must be met to qualify for the
+                $0 Base Fee promotion.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     HIGHER TRIP PRICING
+========================================= -->
+
+<section class="pricing">
+
+    <div class="price-arrow">
         ↑
-      </div>
+    </div>
 
-      <div class="price-content">
+    <div class="price-copy">
 
-        <div class="new-label">
-          NEW!
+        <div class="new">
+            NEW!
         </div>
 
         <h2>
-          Higher Trip Pricing
+            Higher Trip Pricing
         </h2>
 
         <p>
-          Rates have increased for eligible trips in
-          <strong>select areas throughout the 5 Boroughs.</strong>
+            Rates have increased for eligible trips
+            in <strong>select areas throughout the 5 Boroughs.</strong>
         </p>
 
-        <div class="earning-line">
-          More earning opportunities on qualifying trips
-        </div>
+    </div>
 
-      </div>
+</section>
 
-    </section>
 
-    <!-- =========================
-         PAY OPTIONS
-    ========================= -->
 
-    <section class="pay">
+<!-- =========================================
+     PAY OPTIONS
+========================================= -->
 
-      <h2 class="pay-title">
-        Choose How You Get Paid
-      </h2>
+<section class="payment">
 
-      <div class="pay-grid">
+    <div class="payment-title">
 
-        <!-- WEEKLY PAY -->
+        <h2>
+            Choose How You Get Paid
+        </h2>
 
-        <div class="pay-card">
+        <p>
+            Meet the minimum completed-trip requirement
+            for your selected payment option.
+        </p>
 
-          <div class="trip-circle">
-            25
-          </div>
+    </div>
 
-          <h3>
-            Weekly Pay
-          </h3>
 
-          <div class="trip-label">
-            25 TRIPS
-          </div>
+    <div class="pay-grid">
 
-          <p>
-            Complete a minimum of
-            <strong>25 completed trips</strong>
-            to qualify for
-            <strong>Weekly Pay.</strong>
-          </p>
 
-          <div class="no-fee-rule">
-
-            ✓ 25 completed trips is also the minimum required
-            to qualify for the
-            <strong>$0 Base Fee promotion.</strong>
-
-          </div>
-
-        </div>
-
-        <!-- NEXT DAY PAY -->
+        <!-- WEEKLY -->
 
         <div class="pay-card">
 
-          <div class="trip-circle">
-            5
-          </div>
+            <div class="card-top">
 
-          <h3>
-            Next Day Pay
-          </h3>
+                <div class="number">
+                    25
+                </div>
 
-          <div class="trip-label">
-            5 TRIPS
-          </div>
+                <div class="trips">
+                    COMPLETED TRIPS
+                </div>
 
-          <p>
-            Complete a minimum of
-            <strong>5 completed trips</strong>
-            to qualify for
-            <strong>Next Day Pay.</strong>
-          </p>
+            </div>
 
-          <div class="no-fee-rule">
 
-            ✓ 5 completed trips is also the minimum required
-            to qualify for the
-            <strong>$0 Base Fee promotion.</strong>
+            <div class="card-body">
 
-          </div>
+                <h3>
+                    Weekly Pay
+                </h3>
+
+                <p>
+                    Complete a minimum of
+                    <strong>25 trips</strong>
+                    to qualify for Weekly Pay.
+                </p>
+
+                <div class="base-qualifier">
+
+                    <span class="check">✓</span>
+
+                    25 completed trips is the
+                    minimum required to qualify
+                    for the
+                    <strong>$0 Base Fee.</strong>
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
 
-    </section>
 
-    <!-- =========================
-         GPS
-    ========================= -->
+        <!-- NEXT DAY -->
 
-    <section class="gps-section">
+        <div class="pay-card">
 
-      <div class="gps-header">
+            <div class="card-top">
 
-        <div class="gps-icon">
-          GPS
+                <div class="number">
+                    5
+                </div>
+
+                <div class="trips">
+                    COMPLETED TRIPS
+                </div>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    Next Day Pay
+                </h3>
+
+                <p>
+                    Complete a minimum of
+                    <strong>5 trips</strong>
+                    to qualify for Next Day Pay.
+                </p>
+
+                <div class="base-qualifier">
+
+                    <span class="check">✓</span>
+
+                    5 completed trips is the
+                    minimum required to qualify
+                    for the
+                    <strong>$0 Base Fee.</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     GPS
+========================================= -->
+
+<section class="gps">
+
+    <div class="gps-top">
+
+        <div class="gps-box">
+            GPS
         </div>
 
         <h2>
-          <span>GPS</span>
-          Compliance Required
+            <span>GPS</span>
+            Compliance Required
         </h2>
 
-      </div>
+    </div>
 
-      <div class="gps-main">
+
+    <div class="gps-warning">
 
         ALL TRIPS MUST BE
         <strong>GPS COMPLIANT.</strong>
 
-      </div>
+    </div>
 
-      <p>
-        Drivers must properly complete all required GPS trip events.
-      </p>
 
-      <div class="gps-events">
+    <p>
+        Drivers must properly complete all required
+        GPS trip events.
+    </p>
+
+
+    <div class="gps-events">
 
         <div class="gps-event">
-          ON LOCATION
+            ON LOCATION
         </div>
 
         <div class="gps-event">
-          PICKUP
+            PICKUP
         </div>
 
         <div class="gps-event">
-          DROP OFF
+            DROP OFF
         </div>
 
-      </div>
+    </div>
 
-    </section>
+</section>
 
-    <!-- =========================
-         CTA
-    ========================= -->
 
-    <section class="cta">
 
-      <h2>
-        Ready to Come Back?
-      </h2>
+<!-- =========================================
+     CONTACT
+========================================= -->
 
-      <p>
-        Get back on the road with Metro Luxury.
-      </p>
+<section class="contact">
 
-      <a
-        href="#"
-        class="cta-button"
-      >
-        START DRIVING TODAY!
-      </a>
+    <h2>
+        Interested in Coming Back?
+    </h2>
 
-    </section>
+    <div class="contact-sub">
+        We'd like to hear from you.
+    </div>
 
-    <!-- =========================
-         BENEFITS
-    ========================= -->
 
-    <section class="benefits">
+    <div class="no-call">
+        PLEASE DO NOT CALL
+    </div>
 
-      <div class="benefit">
-        GREAT EARNING OPPORTUNITIES
-      </div>
 
-      <div class="benefit">
-        SUPPORT YOU CAN COUNT ON
-      </div>
+    <div class="contact-options">
 
-      <div class="benefit">
-        FLEXIBLE SCHEDULES
-      </div>
+        <div class="contact-option">
 
-    </section>
+            <small>
+                OPTION 1
+            </small>
 
-    <!-- =========================
-         TERMS
-    ========================= -->
+            COME BY THE OFFICE
 
-    <footer class="footer">
+        </div>
 
-      Limited-time promotion. Terms and conditions apply.
-      Eligible completed trips must meet applicable GPS compliance requirements.
-      Minimum completed-trip requirements must be met to qualify for the
-      $0 base fee promotion.
-      Higher pricing applies only to eligible trips in select areas.
-      Metro Luxury Inc. reserves the right to modify or discontinue
-      this promotion at any time.
 
-    </footer>
+        <a
+            href="mailto:promos@metroluxurycorp.com?subject=Back%20to%20School%20Come%20Back%20Promo"
+            class="contact-option email"
+        >
 
-  </main>
+            <small>
+                OPTION 2
+            </small>
+
+            promos@metroluxurycorp.com
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     TERMS
+========================================= -->
+
+<footer class="footer">
+
+    Limited-time promotion. Terms and conditions apply.
+    Eligible completed trips must meet applicable GPS compliance requirements.
+    Minimum completed-trip requirements must be met to qualify
+    for the $0 Base Fee promotion.
+    Higher pricing applies only to eligible trips in select areas.
+    Metro Luxury Inc. reserves the right to modify or discontinue
+    this promotion at any time.
+
+</footer>
+
+
+</div>
 
 </div>
 
